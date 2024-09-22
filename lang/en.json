@@ -1,0 +1,42 @@
+{
+  "MORE_ACTIVITIES": {
+    "CONDITION": {
+      "Button": "Apply Condition",
+      "Flavor": "Status Duration",
+      "Legend": "Condition",
+      "Title": "Condition",
+      "FIELDS": {
+        "rounds": {
+          "label": "Duration",
+          "hint": "The duration, in number of rounds."
+        },
+        "status": {
+          "label": "Status",
+          "hint": "The status condition to apply."
+        }
+      }
+    },
+    "CREATE_ITEM": {
+      "Button": "Create Item",
+      "Legend": "Create Item",
+      "Title": "Create Item",
+      "FIELDS": {
+        "itemUuid": {
+          "label": "Item Uuid",
+          "hint": "The uuid of the item that will be created on selected tokens' actors."
+        }
+      }
+    },
+    "ROLL_TABLE": {
+      "Button": "Draw",
+      "Legend": "Roll Table",
+      "Title": "Roll Table",
+      "FIELDS": {
+        "tableUuid": {
+          "label": "Table Uuid",
+          "hint": "The uuid of the table that will be drawn from."
+        }
+      }
+    }
+  }
+}

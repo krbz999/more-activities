@@ -1,0 +1,22 @@
+{
+  "name": "more-activities",
+  "version": "1.0.0",
+  "description": "More Activities",
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs",
+    "createSymlinks": "node ./tools/create-symlinks.mjs",
+    "postinstall": "npm run createSymlinks"
+  },
+  "author": "Zhell",
+  "bugs": {
+    "url": "https://github.com/krbz999/more-activities"
+  },
+  "homepage": "https://github.com/krbz999/more-activities",
+  "devDependencies": {
+    "@html-eslint/eslint-plugin": "^0.26.0",
+    "@html-eslint/parser": "^0.26.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "eslint": "^8.57.0",
+    "rollup": "^4.17.2"
+  }
+}

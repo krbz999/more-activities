@@ -1,0 +1,52 @@
+{
+  "id": "more-activities",
+  "title": "More Activities",
+  "version": "AUTOMATIC",
+  "authors": [
+    {
+      "name": "Zhell",
+      "url": "https://github.com/krbz999",
+      "discord": "zhell9201",
+      "ko-fi": "https://ko-fi.com/zhell",
+      "patreon": "https://patreon.com/zhell"
+    }
+  ],
+  "compatibility": {
+    "minimum": 12,
+    "maximum": 12,
+    "verified": 12
+  },
+  "esmodules": ["module/setup.mjs"],
+  "styles": [],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4.0.0",
+          "maximum": "4.0.x"
+        }
+      }
+    ]
+  },
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "hotReload": {
+      "extensions": ["json", "css"],
+      "paths": ["styles/*.css", "lang/en.json"]
+    }
+  },
+  "url": "https://github.com/krbz999/more-activities",
+  "license": "https://raw.githubusercontent.com/krbz999/more-activities/main/LICENSE",
+  "manifest": "https://github.com/krbz999/more-activities/releases/latest/download/module.json",
+  "download": "AUTOMATIC",
+  "description": "More activities for the dnd5e system."
+}
