@@ -40,9 +40,9 @@ export default class RollTableActivity extends dnd5e.documents.activity.Activity
 
   /**
    * @this {RollTableActivity}
-   * @param {PointerEvent} event     Triggering click event.
-   * @param {HTMLElement} target     The capturing HTML element which defined a [data-action].
-   * @param {ChatMessage5e} message  Message associated with the activation.
+   * @param {PointerEvent} event        Triggering click event.
+   * @param {HTMLElement} target        The capturing HTML element which defined a [data-action].
+   * @param {ChatMessage5e} message     Message associated with the activation.
    */
   static async #execute(event, target, message) {
     const table = await fromUuid(this.tableUuid);

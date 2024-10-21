@@ -40,9 +40,9 @@ export default class CreateItemActivity extends dnd5e.documents.activity.Activit
 
   /**
    * @this {CreateItemActivity}
-   * @param {PointerEvent} event     Triggering click event.
-   * @param {HTMLElement} target     The capturing HTML element which defined a [data-action].
-   * @param {ChatMessage5e} message  Message associated with the activation.
+   * @param {PointerEvent} event        Triggering click event.
+   * @param {HTMLElement} target        The capturing HTML element which defined a [data-action].
+   * @param {ChatMessage5e} message     Message associated with the activation.
    */
   static async #execute(event, target, message) {
     const item = await fromUuid(this.itemUuid);
