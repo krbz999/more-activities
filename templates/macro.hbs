@@ -1,0 +1,8 @@
+<section class="tab activity-{{tab.id}} {{tab.cssClass}}" data-tab="{{tab.id}}" data-group="{{tab.group}}">
+  <fieldset>
+    <legend>{{localize "DOCUMENT.Macro"}}</legend>
+    {{formGroup fields.macro.fields.name value=source.macro.name}}
+    {{formGroup fields.macro.fields.macroUuid value=source.macro.macroUuid}}
+    {{formGroup fields.macro.fields.visible value=source.macro.visible input=inputs.createCheckboxInput}}
+  </fieldset>
+</section>

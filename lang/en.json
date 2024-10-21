@@ -27,6 +27,24 @@
         }
       }
     },
+    "MACRO": {
+      "FIELDS": {
+        "macro": {
+          "name": {
+            "label": "Label",
+            "hint": "DIsplayed name for the macro button."
+          },
+          "macroUuid": {
+            "label": "Macro",
+            "hint": "The uuid of the macro that will be executed."
+          },
+          "visible": {
+            "label": "Visibility",
+            "hint": "Whether the macro button is visible to all players."
+          }
+        }
+      }
+    },
     "ROLL_TABLE": {
       "Button": "Draw Result",
       "Legend": "Roll Table",
