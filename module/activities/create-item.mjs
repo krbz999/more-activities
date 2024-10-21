@@ -47,12 +47,12 @@ export default class CreateItemActivity extends dnd5e.documents.activity.Activit
   static async #execute(event, target, message) {
     const item = await fromUuid(this.itemUuid);
     if (!item) return;
-    const itemData = game.items.fromCompendium(item);
+    const itemData = await Item.implementation.createWithContents([item]);
     const actors = new Set();
     for (const {actor} of canvas.tokens.controlled) {
       if (!actor || actors.has(actor)) continue;
       actors.add(actor);
-      Item.implementation.create(itemData, {parent: actor, maScrollingText: true});
+      Item.implementation.createDocuments(itemData, {keepId: true, parent: actor, maScrollingText: item.name});
     }
   }
 }
@@ -67,13 +67,9 @@ export default class CreateItemActivity extends dnd5e.documents.activity.Activit
  */
 Hooks.on("createItem", (item, context, userId) => {
   if (!item.isEmbedded || !context.maScrollingText) return;
-
-  const tokens = item.actor.getActiveTokens(true);
-  const text = item.name;
-
-  for (const token of tokens) {
+  for (const token of item.actor.getActiveTokens(true)) {
     if (!token.visible || token.document.isSecret) continue;
-    canvas.interface.createScrollingText(token.center, text, {
+    canvas.interface.createScrollingText(token.center, context.maScrollingText, {
       anchor: CONST.TEXT_ANCHOR_POINTS.CENTER,
       direction: CONST.TEXT_ANCHOR_POINTS.TOP,
       distance: (2 * token.h),

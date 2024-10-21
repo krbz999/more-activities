@@ -25,7 +25,7 @@
         "type": "system",
         "compatibility": {
           "minimum": "4.0.0",
-          "maximum": "4.0.x"
+          "maximum": "4.1.x"
         }
       }
     ]
