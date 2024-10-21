@@ -3,8 +3,8 @@
     "CONDITION": {
       "Button": "Apply Condition",
       "Flavor": "Status Duration",
-      "Legend": "Condition",
-      "Title": "Condition",
+      "Legend": "Apply Condition",
+      "Title": "Apply Condition",
       "FIELDS": {
         "rounds": {
           "label": "Duration",
@@ -28,7 +28,7 @@
       }
     },
     "ROLL_TABLE": {
-      "Button": "Draw",
+      "Button": "Draw Result",
       "Legend": "Roll Table",
       "Title": "Roll Table",
       "FIELDS": {

@@ -13,7 +13,7 @@ export default class CreateItemActivity extends dnd5e.documents.activity.Activit
   /** @override */
   static metadata = Object.freeze(foundry.utils.mergeObject(super.metadata, {
     type: "ma-create-item",
-    img: "icons/commodities/gems/gem-cluster-teal.webp",
+    img: "modules/more-activities/assets/present.svg",
     title: "MORE_ACTIVITIES.CREATE_ITEM.Title",
     sheetClass: CreateItemActivitySheet,
     usage: {
@@ -29,7 +29,7 @@ export default class CreateItemActivity extends dnd5e.documents.activity.Activit
   _usageChatButtons(message) {
     return [{
       label: game.i18n.localize("MORE_ACTIVITIES.CREATE_ITEM.Button"),
-      icon: "<i class='fa-solid fa-bolt' inert></i>",
+      icon: "<i class='fa-solid fa-gift' inert></i>",
       dataset: {
         action: "maCreateItem"
       }

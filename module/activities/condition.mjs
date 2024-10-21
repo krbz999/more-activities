@@ -13,7 +13,7 @@ export default class ConditionActivity extends dnd5e.documents.activity.Activity
   /** @override */
   static metadata = Object.freeze(foundry.utils.mergeObject(super.metadata, {
     type: "ma-condition",
-    img: "icons/commodities/gems/gem-cluster-teal.webp",
+    img: "modules/more-activities/assets/snowflake.svg",
     title: "MORE_ACTIVITIES.CONDITION.Title",
     sheetClass: ConditionActivitySheet,
     usage: {
@@ -29,7 +29,7 @@ export default class ConditionActivity extends dnd5e.documents.activity.Activity
   _usageChatButtons(message) {
     return [{
       label: game.i18n.localize("MORE_ACTIVITIES.CONDITION.Button"),
-      icon: "<i class='fa-solid fa-bolt' inert></i>",
+      icon: "<i class='fa-solid fa-snowflake' inert></i>",
       dataset: {
         action: "maCondition"
       }

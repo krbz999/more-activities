@@ -13,7 +13,7 @@ export default class RollTableActivity extends dnd5e.documents.activity.Activity
   /** @override */
   static metadata = Object.freeze(foundry.utils.mergeObject(super.metadata, {
     type: "ma-roll-table",
-    img: "icons/commodities/gems/gem-cluster-teal.webp",
+    img: "icons/svg/dice-target.svg",
     title: "MORE_ACTIVITIES.ROLL_TABLE.Title",
     sheetClass: RollTableActivitySheet,
     usage: {
@@ -29,7 +29,7 @@ export default class RollTableActivity extends dnd5e.documents.activity.Activity
   _usageChatButtons(message) {
     return [{
       label: game.i18n.localize("MORE_ACTIVITIES.ROLL_TABLE.Button"),
-      icon: "<i class='fa-solid fa-bolt' inert></i>",
+      icon: "<i class='fa-solid fa-dice' inert></i>",
       dataset: {
         action: "maRollTable"
       }
